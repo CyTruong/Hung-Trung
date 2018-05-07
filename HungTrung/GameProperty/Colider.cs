@@ -117,7 +117,6 @@ namespace HungTrung.GameProperty
         {
           
             bool check;
-            GameObject.isInUsingList = true;
             try
             {
                 for (int i = 0; i < GameObject.List_Gameobject.Count; i++)
@@ -128,6 +127,7 @@ namespace HungTrung.GameProperty
 
                     if (obj.name != this.rigidbody.gameobj.name && obj.rigitbody.isColision)
                     {
+       
                         if (this.type == obj.rigitbody.colider.type && this.type == Shapetype.Circle && obj != null)
                         {
                             check = checkColision_cir_cir(obj);
@@ -164,7 +164,6 @@ namespace HungTrung.GameProperty
             //foreach (GameObject obj in GameObject.List_Gameobject)
             //{            
             //}
-            GameObject.isInUsingList = false;
         }
 
         private bool checkColision_rec_rec(GameObject obj)

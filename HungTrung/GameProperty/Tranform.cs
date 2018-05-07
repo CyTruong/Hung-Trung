@@ -37,15 +37,15 @@ namespace HungTrung.GameProperty
 
       public class Size
         {
-            public int X { get; set; }
-            public int Y { get; set; }
+            public double X { get; set; }
+            public double Y { get; set; }
 
             public Size()
             {
                 X = 1;
                 Y = 1;
             }
-            public Size(int x, int y)
+            public Size(double x, double y)
             {
                 this.X = x;
                 this.Y = y;

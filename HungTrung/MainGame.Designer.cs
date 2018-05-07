@@ -63,6 +63,7 @@
             this.Controls.Add(this.lbobj);
             this.Controls.Add(this.lbScores);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainGame";
             this.Text = "Hứng Trứng";

@@ -19,6 +19,7 @@ namespace HungTrung.GameContent.Eggs
             Tranform.Position startPos = new Tranform.Position(chicken.tranform.position.X + chicken.mask.Width / 2, chicken.tranform.position.Y + chicken.mask.Height);
             this.tranform.position = startPos;
 
+
             this.rigitbody = new Rigidbody(this);
             this.rigitbody.isColision = true;
             this.rigitbody.isKinematic = false;
@@ -29,9 +30,23 @@ namespace HungTrung.GameContent.Eggs
 
         }
 
+        protected void EggAnimationFinishEvent(Bitmap defautMask)
+        {
+            this.rigitbody.isColision = false;
+            this.rigitbody.isKinematic = false;
+            this.rigitbody.isUseGravity = false;
+            this.Destroy();
+        }
+
         private void Colider_OnHitColision(GameProperty.GameObject obj)
         {
-            /// Mọi xử lí đểu nằm ở main nên o cần xử lí ở đây
+            if (obj.name == "crossbar")
+            {
+                this.rigitbody.isUseGravity = false;
+                this.animation.Start();
+            }
+           
+
         }
         protected int scores = 0;
 

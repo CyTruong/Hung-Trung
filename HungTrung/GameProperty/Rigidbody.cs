@@ -20,6 +20,8 @@ namespace HungTrung.GameProperty
         public GameObject gameobj;
         public Colider colider { get; set; }
 
+        private Thread giridThread;
+
         public Rigidbody( GameObject gameobj)
         {
             gravitationSpeed = 15;
@@ -33,7 +35,7 @@ namespace HungTrung.GameProperty
         {
 
 
-            Thread giridThread = new Thread(new ThreadStart (Update));
+            giridThread = new Thread(new ThreadStart (Update));
             giridThread.Name = "Gigidbody Thread";
             giridThread.Start();
         }
@@ -55,13 +57,19 @@ namespace HungTrung.GameProperty
                     colider.UpdateColider(gameobj.tranform);            
                 }
                 //Console.WriteLine("X Y :"+gameobj.tranform.position.X +" "+gameobj.tranform.position.Y);
-                if (gameobj.tranform.position.Y > MainGame.WindowSize.Height )
-                {
-                    gameobj.Destroy();
-                    Thread.CurrentThread.Abort();
-                }
+
+                //if (gameobj.tranform.position.Y > MainGame.WindowSize.Height )
+                //{
+                //    gameobj.Destroy();
+                   
+                //}
                 Thread.Sleep(100);
             }
+        }
+
+        public void Stop()
+        {
+            giridThread.Abort();
         }
 
         //////////////////////////////

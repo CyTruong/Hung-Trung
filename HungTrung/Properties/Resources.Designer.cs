@@ -63,6 +63,26 @@ namespace HungTrung.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _null {
+            get {
+                object obj = ResourceManager.GetObject("_null", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bar {
+            get {
+                object obj = ResourceManager.GetObject("bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bow {
             get {
                 object obj = ResourceManager.GetObject("bow", resourceCulture);
@@ -83,9 +103,29 @@ namespace HungTrung.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap egg_pop_animate {
+            get {
+                object obj = ResourceManager.GetObject("egg_pop_animate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap egg_popped {
             get {
                 object obj = ResourceManager.GetObject("egg_popped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap farm {
+            get {
+                object obj = ResourceManager.GetObject("farm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +146,16 @@ namespace HungTrung.Properties {
         internal static System.Drawing.Bitmap shit {
             get {
                 object obj = ResourceManager.GetObject("shit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shit_animate {
+            get {
+                object obj = ResourceManager.GetObject("shit_animate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

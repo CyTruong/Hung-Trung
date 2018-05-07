@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Threading;
 
 namespace HungTrung.GameProperty
 { 
@@ -20,11 +21,10 @@ namespace HungTrung.GameProperty
         public event AnimationFinishDelegate AnimationFinishEvent;
 
         private GameObject gameobj;
-        private Timer timer;
         private int rows,colums;
         private int curIndex;
         private Bitmap defautMask;
-
+        private Thread aniThread;
         public Animation(GameObject obj,Bitmap bm,int row, int colum)
         {
             this.gameobj = obj;
@@ -32,48 +32,63 @@ namespace HungTrung.GameProperty
             this.colums = colum;
             this.animationSprite = bm;
             this.defautMask = obj.mask;
+            this.numberofSprite = row * colum;
             animationTime = MainGame.UPDATE_SCRREEN_TIME;
             isRepeat = false;
         }
 
         public void Start()
         {
-            timer = new Timer();
-            timer.Interval = animationTime;
-            timer.Tick += updateMask;
-            timer.Start();
+            this.gameobj.mask = new Bitmap(HungTrung.Properties.Resources._null);
+            FixTranformPosition();
+            aniThread = new Thread(new ThreadStart(updateMask));
+            aniThread.Start();
         }
 
-        private void updateMask(object sender, EventArgs e)
+        private void updateMask()
         {
-            curIndex++;
-            if (curIndex> numberofSprite)
+
+            while (true)
             {
-                curIndex = 0;
+                Thread.CurrentThread.Join(animationTime);
+                if (curIndex > numberofSprite &&!isRepeat)
+                {
+                    break;
+                }
+                if (curIndex > numberofSprite)
+                {
+                    curIndex = 0;
+                }
+                gameobj.mask = getAnimationBitmap(curIndex);
+                curIndex++;
             }
-            gameobj.mask = getAnimationBitmap(curIndex);
-            timer.Stop();
-            if (isRepeat)
-            {
-                timer.Start();
-            }
-            else
-            {
-                AnimationFinishEvent(defautMask);
-            }
-            
+               AnimationFinishEvent(defautMask);
+         
         }
 
         private Bitmap getAnimationBitmap(int index)
         {
-            int miniW = animationSprite.Width / colums;
-            int miniH = animationSprite.Height / rows;
-            int nW = index % colums;
-            int nH = index % rows;
-            Rectangle cuttingRect = new Rectangle(nW * miniW, nH * miniH,miniW,miniH);
-            return animationSprite.Clone(cuttingRect, animationSprite.PixelFormat);
+            Console.WriteLine("aniation index "+ index);
+            try
+            {
+                int miniW = animationSprite.Width / colums;
+                int miniH = animationSprite.Height / rows;
+                int nW = index % colums;
+                int nH = index % rows;
+                Rectangle cuttingRect = new Rectangle(nW * miniW, nH * miniH, miniW, miniH);
+                return animationSprite.Clone(cuttingRect, animationSprite.PixelFormat);
+            }
+            catch (InvalidOperationException)
+            {
+                return getAnimationBitmap(index);
+            }
+           
         }
 
-      
+        private void  FixTranformPosition()
+        {
+            this.gameobj.tranform.position.Y = this.gameobj.tranform.position.Y - animationSprite.Height / (2*rows);
+            this.gameobj.tranform.position.X = this.gameobj.tranform.position.X - animationSprite.Width / (2 * colums);
+        }
     }
 }

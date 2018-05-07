@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameContent\BackGround.cs" />
+    <Compile Include="GameContent\Bar.cs" />
     <Compile Include="GameContent\Bow.cs" />
     <Compile Include="GameContent\Chicken.cs" />
+    <Compile Include="GameContent\Wind.cs" />
     <Compile Include="MainGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +111,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\white_egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg_pop_animate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shit_animate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

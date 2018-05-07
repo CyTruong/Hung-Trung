@@ -16,11 +16,14 @@ namespace HungTrung
 {
     public partial class MainGame : Form
     {
-        public const int UPDATE_SCRREEN_TIME = 100;
+        public const int UPDATE_SCRREEN_TIME = 70;
         public static Size WindowSize ; 
         private Timer timer;
         private Graphics graph;
         private Bow main_character;
+        private Bar belowBar;
+        private BackGround bg;
+
         public MainGame()
         {
             InitializeComponent();
@@ -32,10 +35,32 @@ namespace HungTrung
             timer = new Timer();
             timer.Interval = UPDATE_SCRREEN_TIME;
             timer.Tick += Timer_Tick;
-            loadChicken();
-            loadBow();
-            timer.Start();
+
+
+            bg = new BackGround();
             
+
+            main_character = new Bow();
+
+            LoadBar();
+
+            loadChicken();
+
+            timer.Start();
+
+            
+        }
+
+        private void LoadBar()
+        {
+            belowBar = new Bar();
+            Bar upperBar = new Bar();
+            int y = HungTrung.Properties.Resources.chicken.Height;
+            upperBar.tranform.position = new Tranform.Position(0, y);
+            upperBar.rigitbody = new Rigidbody(upperBar);
+            upperBar.rigitbody.isColision = false;
+            upperBar.rigitbody.isKinematic = false;
+            upperBar.rigitbody.isUseGravity = false;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -78,10 +103,7 @@ namespace HungTrung
             chicken4.CreatEgg(4000);
         }
 
-        private void loadBow()
-        {
-            main_character = new Bow();
-        }
+   
 
         private void drawing()
         {
@@ -89,7 +111,7 @@ namespace HungTrung
             {
                 foreach (GameObject obj in GameObject.List_Gameobject)
                 {
-                    graph.DrawImage(obj.mask, obj.tranform.position.X, obj.tranform.position.Y);
+                    graph.DrawImage(obj.getBitmap(), obj.tranform.position.X, obj.tranform.position.Y);
                 }
             }
             catch (InvalidOperationException e)

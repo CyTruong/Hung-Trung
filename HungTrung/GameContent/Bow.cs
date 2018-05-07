@@ -17,7 +17,7 @@ namespace HungTrung.GameContent
             this.tag = "bow";
             this.tranform = new Tranform();
             this.mask = new Bitmap(HungTrung.Properties.Resources.bow);
-            this.tranform.position.Y = MainGame.WindowSize.Height - this.mask.Height;
+            this.tranform.position.Y = MainGame.WindowSize.Height - (int)(this.mask.Height* 1.4);
             this.rigitbody = new Rigidbody(this);
             this.rigitbody.isColision = true;
             this.rigitbody.isKinematic = false;

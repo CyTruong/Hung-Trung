@@ -12,7 +12,6 @@ namespace HungTrung.GameProperty
     class GameObject
     {
         public static List<GameObject> List_Gameobject = new List<GameObject>();
-        public static bool isInUsingList = false;
 
         public string name { get; set; }
         public string tag { get; set; }
@@ -28,6 +27,11 @@ namespace HungTrung.GameProperty
             GameObject.List_Gameobject.Add(this);
         }
 
+        public Bitmap getBitmap()
+        {
+            return new Bitmap(mask, new Size((int)(mask.Width * tranform.size.X), (int)(mask.Height * tranform.size.Y)));
+        }
+
      
         public void Start()
         {
@@ -39,9 +43,10 @@ namespace HungTrung.GameProperty
 
         public void Destroy()
         {
-            while (GameObject.isInUsingList) { }
             List_Gameobject.Remove(this);
+            this.rigitbody.Stop();
+
         }
-        
+
     }
 }
