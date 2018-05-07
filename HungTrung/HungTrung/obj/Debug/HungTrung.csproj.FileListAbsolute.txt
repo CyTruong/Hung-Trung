@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2015\Projects\HungTrung\HungTrung\bin\Debug\HungTrung.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\bin\Debug\HungTrung.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\bin\Debug\HungTrung.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.pdb
+C:\Users\admin\documents\visual studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.MainGame.resources
