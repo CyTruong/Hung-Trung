@@ -42,6 +42,8 @@ namespace HungTrung.GameContent.Eggs
         {
             if (obj.name == "crossbar")
             {
+                this.rigitbody.isKinematic = false;
+                this.rigitbody.isColision = false;
                 this.rigitbody.isUseGravity = false;
                 this.animation.Start();
             }

@@ -37,6 +37,10 @@ namespace HungTrung.GameContent
             timer.Start();
         }
 
+        public void stopCreaatEgg()
+        {
+            timer.Stop();
+        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             Random r = new Random();

@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddHightsScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHightsScore.Designer.cs">
+      <DependentUpon>AddHightsScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameContent\BackGround.cs" />
-    <Compile Include="GameContent\Bar.cs" />
+    <Compile Include="GameContent\Bar\HorizontalBar.cs" />
+    <Compile Include="GameContent\Bar\VerticalBar.cs" />
     <Compile Include="GameContent\Bow.cs" />
     <Compile Include="GameContent\Chicken.cs" />
     <Compile Include="GameContent\Wind.cs" />
+    <Compile Include="Highscorses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Highscorses.Designer.cs">
+      <DependentUpon>Highscorses.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +81,12 @@
     <Compile Include="GameProperty\Tranform.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddHightsScore.resx">
+      <DependentUpon>AddHightsScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highscorses.resx">
+      <DependentUpon>Highscorses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainGame.resx">
       <DependentUpon>MainGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +145,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highscores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FarmMusic.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

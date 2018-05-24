@@ -26,10 +26,13 @@ namespace HungTrung.GameContent
             this.rigitbody.colider.SetRectColider(this.mask.Width, this.mask.Height);
             this.rigitbody.colider.OnHitColision += Colider_OnHitColision;
             this.rigitbody.Start();
+
+            scores = 0;
         }
 
         private void Colider_OnHitColision(GameObject obj)
         {
+          
             scores += (obj as Eggs.Eggs).getscores();
             obj.Destroy();
         }

@@ -149,6 +149,10 @@ namespace HungTrung.GameProperty
                         {
 
                             OnHitColision(obj);
+                            //if (this.rigidbody.gameobj.name == "golden egg")
+                            //{
+                            //    Console.WriteLine("golden egg ad"+ obj.name);
+                            //}
                         }
                     }
                 }

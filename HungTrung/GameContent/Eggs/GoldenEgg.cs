@@ -15,7 +15,7 @@ namespace HungTrung.GameContent.Eggs
             scores = 30;
             this.name = "golden egg";
             this.mask = new Bitmap(HungTrung.Properties.Resources.golden_egg);
-            this.rigitbody.colider.SetRectColider(this.mask.Width, this.mask.Height);
+            this.rigitbody.colider.SetRectColider(28,23);
 
             this.animation = new Animation(this, new Bitmap(HungTrung.Properties.Resources.egg_pop_animate), 4, 4);
             this.animation.numberofSprite = 6;

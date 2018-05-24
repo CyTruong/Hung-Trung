@@ -8,5 +8,22 @@ C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Deb
 C:\Users\admin\Documents\Visual Studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.pdb
 C:\Users\admin\documents\visual studio 2015\Projects\HungTrung\HungTrung\obj\Debug\HungTrung.MainGame.resources
 C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\bin\Debug\HungTrung.exe.config
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\bin\Debug\HungTrung.exe
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\bin\Debug\HungTrung.pdb
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.csprojResolveAssemblyReference.cache
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.MainGame.resources
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.Properties.Resources.resources
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.csproj.GenerateResource.Cache
 C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.exe
 C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\Hung-Trung\HungTrung\obj\Debug\HungTrung.pdb
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\bin\Debug\HungTrung.exe
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\bin\Debug\HungTrung.exe.config
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\bin\Debug\HungTrung.pdb
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.MainGame.resources
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.Properties.Resources.resources
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.csproj.GenerateResource.Cache
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.exe
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.pdb
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.csprojResolveAssemblyReference.cache
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.Highscorses.resources
+C:\Users\admin\OneDrive - gm.uit.edu.vn\Đồ án\LTTQ\temp\Hung-Trung\HungTrung\obj\Debug\HungTrung.AddHightsScore.resources
